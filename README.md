@@ -125,3 +125,15 @@ Typing now passes through clause segmentation, a disposable discovery candidate,
 Resolution supports role groups with exclusions, ordinal components, and last-mentioned singular/group references within and across requests. Explicit `X is also called Y` aliases remain on the component and are saved locally; this is deterministic alias storage, not automatic model training. Explicit database ownership distinguishes per-application counts from shared stores, survives reload, and applies to later application additions. Repeated ownership instructions preserve IDs. Templates remap stored reference and policy IDs when cloned.
 
 Run `node scripts/test-request-plan.mjs` for exclusions, ordinals, ownership, shared databases, contextual references, partial execution, aliases, and idempotency. Unsupported phrasing and ambiguous pronouns still require clarification.
+
+## Identity vocabulary and editable features
+
+A bounded domain catalog recognizes enterprise/ENT login and connections, SSO/single sign-on, MFA/2FA, Adaptive MFA, passwordless, passkeys, Universal Login, Attack Protection and its named defenses, FastPass, ThreatInsight, Identity Threat Protection, SCIM provisioning, Lifecycle Management, Organizations and RBAC. These are diagram concepts; recognition does not assert licensing, tenant configuration or universal platform compatibility. Unknown terms may still need clarification.
+
+Enterprise and social connections use generic provider nodes when the provider is unspecified; the engine does not invent Entra ID, Google, SAML, or OIDC. `Enterprise connection in Auth0`, `Enable single sign-on on Auth0`, and `Disable MFA on Okta` work in the change box. SPA is a distinct named application.
+
+Attached capabilities remain part of their platform. They stack below the platform by default, within a subtle grouping frame. Click a badge to edit its label and color, drag it independently, reset its position, or remove it; double-click focuses its name field. Labels, offsets, colors, undo and saved templates retain the customization. The original canonical capability key is retained for text-based enable/disable commands even after renaming the visible label. Fit/export bounds and connector routing include the badge geometry. Excalidraw exports badges as separate editable shapes and text.
+
+Vocabulary references reviewed November 2, 2026: [Auth0 Enterprise Connections](https://auth0.com/docs/authenticate/enterprise-connections), [Auth0 SSO](https://auth0.com/docs/authenticate/single-sign-on), [Auth0 Attack Protection](https://auth0.com/docs/secure/attack-protection), [Okta FastPass](https://help.okta.com/oie/en-us/content/Topics/identity-engine/devices/fp/fp-main.htm), [Okta ThreatInsight](https://help.okta.com/oie/en-us/content/topics/security/threat-insight/ti-index.htm), [Okta SCIM](https://developer.okta.com/docs/guides/scim-provisioning-integration-overview/).
+
+Run `node scripts/test-identity-vocabulary.mjs` for domain aliases, provider neutrality, feature defaults and custom geometry.
