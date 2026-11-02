@@ -1,0 +1,2 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import vm from 'node:vm';
+const manifest=JSON.parse(fs.readFileSync('.openai/hosting.json','utf8'));assert.equal(manifest.static.directory,'dist');const html=fs.readFileSync('dist/index.html','utf8');assert(html.includes('<title>CallCanvas'));const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];new vm.Script(script);assert(!/fetch\(|XMLHttpRequest|api\.openai|OPENAI_API_KEY/.test(script));assert(!html.includes('<script src='));console.log('Valid self-contained static application; no API dependencies');
