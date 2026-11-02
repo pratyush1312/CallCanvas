@@ -108,9 +108,12 @@ node scripts/test-typed-workflow.mjs
 node scripts/test-drawing-flows.mjs
 node scripts/test-se-workspace.mjs
 node scripts/test-human-language.mjs
+node scripts/test-relationship-scope.mjs
 node scripts/test-canvas-interactions.mjs
 bash scripts/build.sh
 node scripts/validate-artifact.mjs
 ```
 
 Checks cover exact customer examples, generic database labels, custom names and quantities, contextual edits, sequential additions/connections, replacements, stable positions, connector routing, confirmation signatures, Azure aliases, all thirty-six template graphs, verified reference metadata, and absence of import controls. Narrative/transcript tests remain internal legacy engine regression coverage; transcript generation is not exposed in the product.
+
+Explicit relationship scope is checked before retaining inferred identity fan-out. Quantified endpoints resolve by role and cardinality; singular references to multiple same-role nodes remain ambiguous. Unpunctuated repeated subject clauses are separated when a preceding relationship is present. A 51-case scope suite varies counts, app/service/API roles, platform choice and connection phrasing, plus shared identity and incremental group edits. These checks are bounded coverage, not universal language understanding.
