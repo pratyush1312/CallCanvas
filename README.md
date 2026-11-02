@@ -117,3 +117,11 @@ node scripts/validate-artifact.mjs
 Checks cover exact customer examples, generic database labels, custom names and quantities, contextual edits, sequential additions/connections, replacements, stable positions, connector routing, confirmation signatures, Azure aliases, all thirty-six template graphs, verified reference metadata, and absence of import controls. Narrative/transcript tests remain internal legacy engine regression coverage; transcript generation is not exposed in the product.
 
 Explicit relationship scope is checked before retaining inferred identity fan-out. Quantified endpoints resolve by role and cardinality; singular references to multiple same-role nodes remain ambiguous. Unpunctuated repeated subject clauses are separated when a preceding relationship is present. A 51-case scope suite varies counts, app/service/API roles, platform choice and connection phrasing, plus shared identity and incremental group edits. These checks are bounded coverage, not universal language understanding.
+
+## Structured request planning
+
+Typing now passes through clause segmentation, a disposable discovery candidate, explicit reference binding, and plan execution before the visible graph is committed. The existing catalog/description parser remains a compatibility adapter, not a universal grammar. The plan records clause evidence and unresolved references and is available under Review diagram. Resolvable relationships proceed even when another clause needs clarification.
+
+Resolution supports role groups with exclusions, ordinal components, and last-mentioned singular/group references within and across requests. Explicit `X is also called Y` aliases remain on the component and are saved locally; this is deterministic alias storage, not automatic model training. Explicit database ownership distinguishes per-application counts from shared stores, survives reload, and applies to later application additions. Repeated ownership instructions preserve IDs. Templates remap stored reference and policy IDs when cloned.
+
+Run `node scripts/test-request-plan.mjs` for exclusions, ordinals, ownership, shared databases, contextual references, partial execution, aliases, and idempotency. Unsupported phrasing and ambiguous pronouns still require clarification.
