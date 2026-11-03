@@ -137,3 +137,16 @@ Attached capabilities remain part of their platform. They stack below the platfo
 Vocabulary references reviewed November 2, 2026: [Auth0 Enterprise Connections](https://auth0.com/docs/authenticate/enterprise-connections), [Auth0 SSO](https://auth0.com/docs/authenticate/single-sign-on), [Auth0 Attack Protection](https://auth0.com/docs/secure/attack-protection), [Okta FastPass](https://help.okta.com/oie/en-us/content/Topics/identity-engine/devices/fp/fp-main.htm), [Okta ThreatInsight](https://help.okta.com/oie/en-us/content/topics/security/threat-insight/ti-index.htm), [Okta SCIM](https://developer.okta.com/docs/guides/scim-provisioning-integration-overview/).
 
 Run `node scripts/test-identity-vocabulary.mjs` for domain aliases, provider neutrality, feature defaults and custom geometry.
+
+
+### Direct customization and AI vocabulary (November 3, 2026)
+
+Select a component or line once to open its style panel. Change stroke/background/text colors, stroke width/style, text size, opacity, corners (components), or order within its object layer. Duplicate, clear just the text, or delete the object. Double-click or Edit text opens the inline editor; the inline connector editor also provides Clear text and Delete line. Delete/Backspace deletes the selected object when focus is outside a text field; Undo restores it. Styles persist in browser projects and SVG/PNG output; editable Excalidraw exports preserve primary stroke/fill/opacity styles.
+
+The local catalog recognizes AI agents, MCP servers/clients, Token Vault, Auth for MCP, Auth0 Actions, Management/Authentication APIs, log streams, RAG pipelines, vector databases, first/third-party APIs, CIBA approval, token exchange, connected accounts, refresh token rotation, session protection, step-up authentication, DPoP, PKCE, lazy migration, and home realm discovery. Token Vault is represented as a separate component in generated descriptions rather than duplicated as a badge. Saved older projects retain their existing objects.
+
+Catalog aliases now resolve consistently in component discovery, quantities, and follow-up commands. AI/MCP groups support complete-group references. Conversational clauses such as “speaks to”, “reaches out to”, “hooks into”, and “relies on” normalize to supported relationships, with quoted names protected. Unspecified connections remain unspecified; this is bounded language parsing, not model training or an implementation/configuration validator. No API key or inference service is used.
+
+Official references checked: [Auth0 for AI Agents](https://auth0.com/docs/get-started/auth0-for-ai-agents), [Token Vault](https://auth0.com/docs/secure/call-apis-on-users-behalf/token-vault), [CIBA](https://auth0.com/docs/get-started/authentication-and-authorization-flow/client-initiated-backchannel-authentication-flow).
+
+Regression checks: `node scripts/test-ai-editor.mjs` plus the existing parser and gesture suites.
