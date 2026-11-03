@@ -110,6 +110,7 @@ node scripts/test-se-workspace.mjs
 node scripts/test-human-language.mjs
 node scripts/test-relationship-scope.mjs
 node scripts/test-canvas-interactions.mjs
+node scripts/test-qa-regressions.mjs
 bash scripts/build.sh
 node scripts/validate-artifact.mjs
 ```
